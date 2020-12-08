@@ -3,13 +3,13 @@ import StripeCheckout from 'react-stripe-checkout';
 
 const StripeCheckoutButton = ({ price }) => {
   const priceForStripe = price * 100;
-  const publishablekey = 'pk_test_51Hu9BKI4lxRWb8tDEsf4FyH8cpw4txIjx5i7ZW1TCdK6APNzxnP3jCKcHLWMjkamE6lQ4wQxqa7QqQEDLCmuGHVV00zs8bN3hY';
+  const publishableKey = 'pk_test_51Hu9BKI4lxRWb8tDEsf4FyH8cpw4txIjx5i7ZW1TCdK6APNzxnP3jCKcHLWMjkamE6lQ4wQxqa7QqQEDLCmuGHVV00zs8bN3hY';
 
   const onToken = token => {
     console.log(token);
-    alert('Payment Successful')
+    alert('Payment Successful!');
   };
-  
+
   return (
     <StripeCheckout
       label='Pay Now'
@@ -21,10 +21,10 @@ const StripeCheckoutButton = ({ price }) => {
       amount={priceForStripe}
       panelLabel='Pay Now'
       token={onToken}
-      stripeKey={publishablekey}
+      stripeKey={publishableKey}
     />
   );
 };
 
 export default StripeCheckoutButton;
-// https ://svgshare.com/i/CUz.svg
+// image='https://svgshare.com/i/CUz.svg'

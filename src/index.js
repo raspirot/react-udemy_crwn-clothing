@@ -11,7 +11,7 @@ import App from './App';
 
 ReactDOM.render(
   <Provider store={store}>
-    {/* Must be the parent of everything, give access to everything that are in the store */}
+	  {/* Must be the parent of everything, give access to everything that are in the store */}
     <BrowserRouter>
       <PersistGate persistor={persistor}>
         <App />

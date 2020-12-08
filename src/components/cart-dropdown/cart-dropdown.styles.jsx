@@ -1,6 +1,7 @@
-import styles from 'styled-components';
+import styled from 'styled-components';
+import CustomButton from '../custom-button/custom-button.component';
 
-export const CartDropdownContainer = styles.div`
+export const CartDropdownContainer = styled.div`
   position: absolute;
   width: 240px;
   height: 340px;
@@ -12,21 +13,20 @@ export const CartDropdownContainer = styles.div`
   top: 90px;
   right: 40px;
   z-index: 5;
-
-  button {
-    margin-top: auto;
-  }
 `;
 
-export const CartDropdownCartItemsContainer = styles.div`
+export const CartDropdownButton = styled(CustomButton)`
+  margin-top: auto;
+`;
+
+export const EmptyMessageContainer = styled.span`
+  font-size: 18px;
+  margin: 50px auto;
+`;
+
+export const CartItemsContainer = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
   overflow: scroll;
 `;
-
-export const CartDropdownCartItemsEmptyMessage = styles.span`
-  font-size: 18px;
-  margin: 50px auto;
-`;
-

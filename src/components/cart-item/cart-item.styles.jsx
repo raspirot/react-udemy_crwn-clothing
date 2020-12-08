@@ -7,6 +7,10 @@ export const CartItemContainer = styled.div`
   margin-bottom: 15px;
 `;
 
+export const CartItemImage = styled.img`
+  width: 30%;
+`;
+
 export const ItemDetailsContainer = styled.div`
   width: 70%;
   display: flex;
@@ -14,12 +18,4 @@ export const ItemDetailsContainer = styled.div`
   align-items: flex-start;
   justify-content: center;
   padding: 10px 20px;
-`;
-
-export const ItemDetailsName = styled.span`
-  font-size: 16px;
-`;
-
-export const CartItemImage = styled.img`
-  width: 30%;
 `;
