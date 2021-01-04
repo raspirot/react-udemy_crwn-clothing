@@ -31,6 +31,7 @@ const SignUp = ({ signUpStart }) => {
 
   const handleChange = event => {
     const { name, value } = event.target;
+
     setUserCredentials({ ...userCredentials, [name]: value });
   };
 
@@ -81,4 +82,7 @@ const mapDispatchToProps = dispatch => ({
   signUpStart: userCredentials => dispatch(signUpStart(userCredentials))
 });
 
-export default connect(null, mapDispatchToProps)(SignUp);
+export default connect(
+  null,
+  mapDispatchToProps
+)(SignUp);
